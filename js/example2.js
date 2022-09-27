@@ -364,5 +364,51 @@
 
 // console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
 // console.log(includes([1, 2, 3, 4, 5], 3));
+// 
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+// for (const key in apartment) {
+//   keys.push(key)
+// }
+// console.log(keys);
+// for (const value in apartment) {
+//   values.push(apartment[value])
+// }
+// console.log(values);
+
+
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+//   // Change code below this line
+// if (apartment.hasOwnProperty(key)){
+//   keys.push(key)
+// console.log(keys);
+// } 
+// }
+// for (const value in apartment) {
+// if (apartment.hasOwnProperty(value)){
+//   values.push(apartment[value])
+//   console.log(values);
+// }
+// }
+//     // console.log(values);
+
+//   // Change code above this line
 
 
