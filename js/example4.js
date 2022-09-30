@@ -501,6 +501,101 @@
 
 
 // Ex 36-4
-const calculateTotalBalance = users => {
-   
-};
+// const calculateTotalBalance = users => {
+//   const result = users.reduce((acc, user) => {
+// return acc + user.balance;
+//   }, 0)
+//    return result
+// };
+
+
+// Ex 37-4
+// const calculateTotalBalance = users => {
+//   const result = users.reduce((acc, user) => {
+// return acc + user.friends.length;
+//   }, 0)
+//    return result
+// };
+
+// Ex 38-4
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = authors;
+
+
+// Ex 39-4
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a -b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b -a);
+
+
+// Ex 40-4
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+// // Change code below this line
+
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+// Ex 41-4
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { 
+//     title: "Redder Than Blood", 
+//     author: "Tanith Lee", 
+//     rating: 7.94 
+//   },
+//   { 
+//     title: "Enemy of God", 
+//     author: "Bernard Cornwell", 
+//     rating: 8.67 
+//   },
+// ];
+// // Change code below this line
+
+// const sortedByAuthorName = [...books].sort((firstBook, secondBook) =>
+//   firstBook.author.localeCompare(secondBook.author));
+
+// const sortedByReversedAuthorName = [...books].sort((firstBook, secondBook) =>
+//   secondBook.author.localeCompare(firstBook.author));
+
+// const sortedByAscendingRating = [...books].sort((firstBook, secondBook) =>
+//   firstBook.rating- secondBook.rating);
+
+// const sortedByDescentingRating = [...books].sort((firstBook, secondBook) =>
+//   secondBook.rating- firstBook.rating);
+
+
+// Ex 42-4
+const sortByAscendingBalance = [...users].sort((firstUser, secondUser) => secondUser.balance -firstUser.balance )
