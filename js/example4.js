@@ -598,4 +598,75 @@
 
 
 // Ex 42-4
-const sortByAscendingBalance = [...users].sort((firstUser, secondUser) => secondUser.balance -firstUser.balance )
+// const sortByAscendingBalance = users => {
+//    const result = [...users].sort((a, b) => a.balance - b.balance)
+//    return result
+// };
+
+
+// Ex 43-4
+// const sortByDescendingFriendCount = users => {
+//    const result = [...users].sort((a, b) => b.friend.length - a.friend.length)
+//    return result
+// };
+
+
+// Ex 44-4
+// const sortByName = users => {
+// const result = [...users].sort((a, b) => a.name.localeCompare(b.name))
+// return result
+// };
+
+
+// Ex 45-4
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = [...books]
+// .sort((a, b) => a.author.localeCompare(b.author)) 
+// .filter(book => book.rating > MIN_BOOK_RATING)
+// .map(book => book.author);
+
+
+// console.log(names)
+
+// Ex 46-4
+// const getNamesSortedByFriendCount = users => [...users]
+//   .sort((a, b) => a.friends.length - b.friends.length)
+//   .map(user => user.name);
+  
+// Ex 47-4
+// const getSortedFriends = users => [...users]
+// .flatMap((user) => user.friends)
+// .filter((friend, index, array) => array.indexOf(friend) === index)
+// .sort((firstFriends, secondFriends) => firstFriends.localeCompare(secondFriends));
+  
+// Ex 48-4
+const getTotalBalanceByGender = (users, gender) => [...users]
+.filter(user => user.gender === gender).
+reduce((total, user)=>{return total+user.balance},0);
+
+
